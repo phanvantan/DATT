@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tour_detail_id: 1
+  name: MyString
+  price: 9.99
+  status: 1
+  time: 
+
+two:
+  tour_detail_id: 1
+  name: MyString
+  price: 9.99
+  status: 1
+  time: 

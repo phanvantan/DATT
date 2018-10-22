@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :histories
+  resources :tour_bookings
+  resources :places
+  resources :employees
+  resources :tour_details
+  resources :tours
+  resources :user_tours
   root "static_pages#home"
   get "/help", to: "static_pages#help"
   get "/about", to: "static_pages#about"
@@ -21,5 +28,13 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+
+  namespace :admin do
+   root "admins#index"
+   resources :tours
+   resources :places
+   resources :users, only: [:index, :create, :destroy]
+   resources :employees
+ end
 
 end

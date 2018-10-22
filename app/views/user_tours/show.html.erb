@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_tour.user_id %>
+</p>
+
+<p>
+  <strong>Tour:</strong>
+  <%= @user_tour.tour_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_tour_path(@user_tour) %> |
+<%= link_to 'Back', user_tours_path %>

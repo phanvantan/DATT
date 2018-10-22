@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tour Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tour</th>
+      <th>Employee</th>
+      <th>Place</th>
+      <th>Start day</th>
+      <th>End day</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tour_details.each do |tour_detail| %>
+      <tr>
+        <td><%= tour_detail.tour_id %></td>
+        <td><%= tour_detail.employee_id %></td>
+        <td><%= tour_detail.place_id %></td>
+        <td><%= tour_detail.start_day %></td>
+        <td><%= tour_detail.end_day %></td>
+        <td><%= link_to 'Show', tour_detail %></td>
+        <td><%= link_to 'Edit', edit_tour_detail_path(tour_detail) %></td>
+        <td><%= link_to 'Destroy', tour_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tour Detail', new_tour_detail_path %>

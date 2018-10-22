@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tour detail:</strong>
+  <%= @tour_booking.tour_detail_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tour_booking.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @tour_booking.price %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tour_booking.status %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @tour_booking.time %>
+</p>
+
+<%= link_to 'Edit', edit_tour_booking_path(@tour_booking) %> |
+<%= link_to 'Back', tour_bookings_path %>

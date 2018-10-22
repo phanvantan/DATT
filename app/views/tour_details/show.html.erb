@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tour:</strong>
+  <%= @tour_detail.tour_id %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @tour_detail.employee_id %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @tour_detail.place_id %>
+</p>
+
+<p>
+  <strong>Start day:</strong>
+  <%= @tour_detail.start_day %>
+</p>
+
+<p>
+  <strong>End day:</strong>
+  <%= @tour_detail.end_day %>
+</p>
+
+<%= link_to 'Edit', edit_tour_detail_path(@tour_detail) %> |
+<%= link_to 'Back', tour_details_path %>
