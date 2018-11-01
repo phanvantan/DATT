@@ -1,0 +1,5 @@
+<% if flash[:success].present? %>
+  $('.employee-size').html('<%= @employees.size %>');
+  $('.employee-list').html('<%= j render @employees %>')
+  $('.area-alert').html('<%= j render "layouts/flash_alert" %>')
+<% end %>

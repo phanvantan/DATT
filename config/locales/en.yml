@@ -28,8 +28,6 @@ en:
   contact: "Contact"
   about: "About"
   login: "Login"
-  link_rails_tutorial: "http://www.railstutorial.org/"
-  link_rails: "http://rubyonrails.org/"
   shared:
     error_messages:
       the_form: "The form contains "
@@ -39,8 +37,6 @@ en:
   layouts:
     footer:
       news: "News"
-      link_new: "http://news.railstutorial.org/"
-      str_footer: "The %{link1} by %{link2}"
     header:
       sample_app: "sample app"
       login: "Log in"
@@ -48,6 +44,25 @@ en:
       profile: "Profile"
       settings: "Settings"
       logout: "Log out"
+    body_layout:
+      detail: "Detail"
+      logout: "Logout"
+      dashboard: "Dashboard"
+      tours: "Tours"
+      all_tours: "All Tours"
+      employees: "Employees"
+      all_employees: "All Employees"
+      new_employees: "New Employees"
+      users: "Users"
+      all_users: "All Users"
+      new_user: "New User"
+      places: "Places"
+      all_places: "All Places"
+      booking: "Booking"
+      all_booking: "All Booking"
+      back: "Back"
+    admin_body:
+      name: "Vietnam Travel System"
   sessions:
     create:
       message: "Account not activated. Check your email for the activation link."
@@ -77,12 +92,9 @@ en:
     str_root: "This is the home page for the %{link} sample application."
     home:
       feed: "Micropost Feed"
-      link_rails: "http://www.railstutorial.org/"
       welcome: "Welcome to the Sample App"
       str_home: "This is the home page for the %{link} sample application."
     about:
-      link_book: "http://www.railstutorial.org/book"
-      link_screen: "http://screencasts.railstutorial.org"
       screencast_series: "screencast series"
       ruby_on_rails: "Ruby on Rails"
       book: "book"
@@ -91,14 +103,11 @@ en:
     contact:
       str_contact: "Contact the Ruby on Rails Tutorial about the sample app at %{link}. "
       contact_page: "contact page"
-      link_contact: "http://www.railstutorial.org/contact"
     help:
       str_help: "Get help on the Ruby on Rails Tutorial at the %{link1}
       To get help on this sample app, see the %{link2}."
       rail_help: "Rails Tutorial help section"
       ruby_on_rail_help: "Ruby on Rails Tutoria book"
-      link_help: "http://www.railstutorial.org/help"
-      link_book: "http://www.railstutorial.org/book"
   users:
     name: "Name"
     email: "Email"
@@ -181,3 +190,145 @@ en:
     destroy:
       deleted: "Micropost deleted"
       not_delete: "Can't delete"
+  admin:
+    admins:
+      index:
+        tours: "Tours"
+        places: "Places"
+        users: "Users"
+        title: "Admin"
+    tours:
+      tour:
+        sure: "Sure"
+      index:
+        title: "Manager Tours"
+        tours: "Tours"
+        cant_find: "Tour not found"
+        new: "New"
+        new_tour: "New Tour"
+        id: "ID"
+        name: "Name"
+        description: "Description"
+        price: "Price"
+        date: "Date"
+        detail: "Detail"
+        action: "Action"
+        edit_tour: "Edit Tour"
+      form_create:
+        close: "Close"
+        create: "Create"
+      form_edit:
+        save: "Save"
+        close: "Close"
+      create:
+        create_success: "Create Success"
+        create_fail: "Create Fail"
+      update:
+        update_success: "Update Success"
+        update_fail: "Update Fail"
+      destroy:
+        destroy_success: "Destroy Success"
+        destroy_fail: "Destroy Fail"
+    places:
+      place:
+        sure: "Sure"
+      index:
+        title: "Manager Places"
+        places: "Places"
+        cant_find: "Tour not found"
+        new: "New"
+        new_place: "New Place"
+        id: "ID"
+        name: "Name"
+        description: "Description"
+        address: "Address"
+        date: "Date"
+        action: "Action"
+        edit_place: "Edit Place"
+      form_create:
+        close: "Close"
+        create: "Create"
+      form_edit:
+        save: "Save"
+        close: "Close"
+      create:
+        create_success: "Create Success"
+        create_fail: "Create Fail"
+      update:
+        update_success: "Update Success"
+        update_fail: "Update Fail"
+      destroy:
+        destroy_success: "Destroy Success"
+        destroy_fail: "Destroy Fail"
+    employees:
+      employee:
+        sure: "Sure"
+      index:
+        title: "Manager Employees"
+        places: "Employees"
+        cant_find: "Tour not found"
+        new: "New"
+        new_place: "New Employee"
+        id: "ID"
+        name: "Name"
+        position: "Position"
+        address: "Address"
+        date: "Date"
+        action: "Action"
+        edit_place: "Edit Employee"
+      form_create:
+        close: "Close"
+        create: "Create"
+      form_edit:
+        save: "Save"
+        close: "Close"
+      create:
+        create_success: "Create Success"
+        create_fail: "Create Fail"
+      update:
+        update_success: "Update Success"
+        update_fail: "Update Fail"
+      destroy:
+        destroy_success: "Destroy Success"
+        destroy_fail: "Destroy Fail"
+    tour_details:
+      tour_detail:
+        sure: "Sure"
+      edit:
+        title: "Edit Tour Detail"
+        save: "Save"
+      show:
+        cant_find: "Tour Detail not found"
+        title: "Tour Detail"
+      new:
+        title: "New Tour Detail"
+        create: "Create"
+      index:
+        title: "Manager Tour Detail"
+        id: "ID"
+        tour_id: "Tour ID"
+        place_id: "Place ID"
+        employee_id: "Employee ID"
+        date: "Date"
+        action: "Action"
+        start_day: "Start Day"
+        end_day: "End Day"
+      show:
+        title: "Manager Tour Detail"
+        id: "ID"
+        tour_id: "Tour ID"
+        place_id: "Place ID"
+        employee_id: "Employee ID"
+        date: "Date"
+        action: "Action"
+        start_day: "Start Day"
+        end_day: "End Day"
+      create:
+        create_success: "Create Success"
+        create_fail: "Create Fail"
+      update:
+        update_success: "Update Success"
+        update_fail: "Update Fail"
+      destroy:
+        destroy_success: "Destroy Success"
+        destroy_fail: "Destroy Fail"

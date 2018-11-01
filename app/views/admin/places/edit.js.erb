@@ -1,0 +1,4 @@
+<% if @place.present? %>
+ $('#form-edit-place').modal('show');
+<% end %>
+  $('.new-form-edit').html('<%= j render "form_edit" %>');

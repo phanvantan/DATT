@@ -1,0 +1,4 @@
+<% if @employee.present? %>
+ $('#form-edit-employee').modal('show');
+<% end %>
+  $('.new-form-edit').html('<%= j render "form_edit" %>');

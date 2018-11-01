@@ -1,0 +1,20 @@
+<tr>
+  <td><%= place.id %></td>
+  <td><%= place.name %></td>
+  <td><%= place.address %></td>
+  <td><%= place.description %></td>
+  <td><%= I18n.localize place.created_at, formats: :date_month_year %></td>
+  <td>
+    <%= link_to edit_admin_place_path(place.id),
+      data: {toggle: "modal", target: "#form-edit-place"}, remote: true,
+        class: "btn btn-warning" do %>
+      <span class="glyphicon glyphicon-edit"></span>
+    <% end %>
+  </td>
+  <td>
+    <%= link_to  admin_place_path(place.id), method: :delete,
+      data:{confirm: t(".sure"), remote: true}, class: "btn btn-danger" do %>
+      <span class="glyphicon glyphicon-trash"></span>
+    <% end %>
+  </td>
+</tr>

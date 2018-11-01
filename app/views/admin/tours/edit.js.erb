@@ -1,0 +1,4 @@
+<% if @tour.present? %>
+ $('#form-edit-tour').modal('show');
+<% end %>
+  $('.new-form-edit').html('<%= j render "form_edit" %>');

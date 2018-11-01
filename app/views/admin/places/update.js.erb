@@ -1,0 +1,5 @@
+<% if flash[:success].present? %>
+  $('#form-edit-place').modal('hide');
+  $('.place-list').html('<%= j render @places %>')
+  $('.area-alert').html('<%= j render "layouts/flash_alert" %>')
+<% end %>

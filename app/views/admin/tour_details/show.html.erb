@@ -1,0 +1,18 @@
+<% provide :title, t(".title") %>
+<table class="table table-bordered table-hover text-center">
+  <thead>
+    <tr>
+      <th><%= t ".id" %></th>
+      <th><%= t ".tour_id" %></th>
+      <th><%= t ".place_id" %></th>
+      <th><%= t ".employee_id" %></th>
+      <th><%= t ".start_day" %></th>
+      <th><%= t ".end_day" %></th>
+      <th><%= t ".date" %></th>
+      <th colspan="2"><%= t ".action" %></th>
+    </tr>
+  </thead>
+  <tbody class="employee-list">
+    <%= render @tour_detail %>
+  </tbody>
+</table>

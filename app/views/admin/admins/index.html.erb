@@ -9,7 +9,7 @@
           </div>
           <div class="col-xs-9 text-right">
             <div class="huge"><%= @admin.tours_count %></div>
-            <div><%= t ".courses" %></div>
+            <div><%= t ".tours" %></div>
           </div>
         </div>
       </div>
@@ -34,13 +34,13 @@
           </div>
           <div class="col-xs-9 text-right">
             <div class="huge"><%= @admin.places_count %></div>
-            <div><%= t ".lessons" %></div>
+            <div><%= t ".places" %></div>
           </div>
         </div>
       </div>
       <a href="#">
         <div class="panel-footer">
-          <span class="pull-left"><%= link_to t ".details",
+          <span class="pull-left"><%= link_to t(".details"),
             admin_places_url %></span>
           <span class="pull-right">
             <i class="fa fa-arrow-circle-right"></i>

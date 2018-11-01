@@ -21,38 +21,41 @@
           <% end %>
         </li>
         <li>
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#courses">
-            <i class="fa fa-list-alt"></i> <%= t ".courses" %>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#tours">
+            <i class="fa fa-list-alt"></i> <%= t ".tours" %>
             <i class="fa fa-fw fa-caret-down"></i><b class="caret"></b>
           </a>
-          <ul id="courses" class="collapse">
+          <ul id="tours" class="collapse">
             <li>
               <%= link_to t(".all_tours"), admin_tours_path %>
+            </li>
+            <li>
+              <%= link_to t(".detail"), admin_tour_details_path %>
             </li>
           </ul>
         </li>
         <li>
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#lessons">
-            <i class="fa fa-list-alt"></i> <%= t ".lessons" %>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#places">
+            <i class="fa fa-list-alt"></i> <%= t ".places" %>
             <i class="fa fa-fw fa-caret-down"></i><b class="caret"></b>
           </a>
-          <ul id="lessons" class="collapse">
+          <ul id="places" class="collapse">
             <li>
               <%= link_to t(".all_places"), admin_places_path %>
             </li>
           </ul>
         </li>
         <li>
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#words">
-            <i class="fa fa-file-word-o"></i> <%= t ".words" %>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#employees">
+            <i class="fa fa-file-word-o"></i> <%= t ".employees" %>
             <i class="fa fa-fw fa-caret-down"></i><b class="caret"></b>
           </a>
-          <ul id="words" class="collapse">
+          <ul id="employees" class="collapse">
             <li>
-              <%= link_to t(".all_words"), admin_words_path %>
+              <%= link_to t(".all_employees"), admin_employees_path %>
             </li>
             <li>
-              <%= link_to t(".new_word"), new_admin_word_path %>
+              <%= link_to t(".new_employees"), new_admin_employee_path %>
             </li>
           </ul>
         </li>
@@ -70,6 +73,17 @@
             </li>
           </ul>
         </li>
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#booking">
+            <i class="fa fa-users"></i> <%= t ".booking" %>
+            <i class="fa fa-fw fa-caret-down"></i><b class="caret"></b>
+          </a>
+          <ul id="booking" class="collapse">
+            <li>
+              <%= link_to t(".all_booking"), admin_tour_bookings_path %>
+            </li>
+          </ul>
+        </li>
         <li class="active">
           <%= link_to t(".back"), root_url %>
         </li>
@@ -83,6 +97,9 @@
           <h1 class="page-header text-center">
             <%= yield :title %>
           </h1>
+          <div class="area-alert">
+            <%= render "layouts/flash_alert" %>
+          </div>
         </div>
       </div>
       <%= yield %>

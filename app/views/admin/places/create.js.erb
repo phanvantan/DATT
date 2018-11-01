@@ -1,0 +1,7 @@
+<% if flash[:success].present? %>
+  $('#form-create-place').modal('hide');
+  $('.place-size').html('<%= @places.size %>');
+  $('.place-list').html('<%= j render @places %>')
+  $('.area-alert').html('<%= j render "layouts/flash_alert" %>')
+<% end %>
+  $('.new-form-create').html('<%= j render "form_create" %>');

@@ -1,0 +1,5 @@
+<% if flash[:success].present? %>
+  $('#form-edit-tour').modal('hide');
+  $('.tour-list').html('<%= j render @tours %>')
+  $('.area-alert').html('<%= j render "layouts/flash_alert" %>')
+<% end %>

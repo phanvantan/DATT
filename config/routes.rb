@@ -35,6 +35,8 @@ Rails.application.routes.draw do
    resources :places
    resources :users, only: [:index, :create, :destroy]
    resources :employees
+   resources :tour_bookings
+   resources :tour_details
  end
 
 end

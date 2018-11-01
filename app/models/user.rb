@@ -18,6 +18,7 @@ class User < ApplicationRecord
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
    length: {minimum: Settings.user.pass.minimum}, allow_nil: true
+   enum role: {admin: 0, user: 1}
   has_secure_password
 
   def self.digest string

@@ -1,0 +1,7 @@
+<% if flash[:success].present? %>
+  $('#form-create-employee').modal('hide');
+  $('.employee-size').html('<%= @employees.size %>');
+  $('.employee-list').html('<%= j render @employees %>')
+  $('.area-alert').html('<%= j render "layouts/flash_alert" %>')
+<% end %>
+  $('.new-form-create').html('<%= j render "form_create" %>');
