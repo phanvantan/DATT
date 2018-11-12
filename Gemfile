@@ -8,10 +8,10 @@ gem "config"
 gem "bcrypt", "3.1.12"
 gem "rubocop", require: false
 gem "bootstrap-sass"
+gem "sass-rails", "~> 5.0"
 gem "rails", "~> 5.2.1"
 gem "sqlite3"
 gem "puma", "~> 3.11"
-gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
@@ -25,6 +25,7 @@ gem "faker", "1.7.3"
 gem "ransack"
 gem "carrierwave", "1.2.2"
 gem "mini_magick", "4.7.0"
+gem 'font-awesome-sass', '~> 5.5.0'
 
 
 group :development, :test do

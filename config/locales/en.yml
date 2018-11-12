@@ -314,6 +314,7 @@ en:
         start_day: "Start Day"
         end_day: "End Day"
       show:
+        cant_find: "Tour Detail Not Found"
         title: "Manager Tour Detail"
         id: "ID"
         tour_id: "Tour ID"
