@@ -20,9 +20,9 @@ en:
   models:
     micropost:
       less_than: "should be less than 5MB"
-  base_title: "Ruby on Rails Tutorial Sample App"
+  base_title: "Viet Nam Travel"
   hello: "Hello world"
-  ruby_on_rail_tutorial: "Ruby on Rails Tutorial"
+  ruby_on_rail_tutorial: "Super Tour"
   home: "Home"
   help: "Help"
   contact: "Contact"

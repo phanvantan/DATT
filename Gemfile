@@ -25,6 +25,8 @@ gem "faker", "1.7.3"
 gem "ransack"
 gem "carrierwave", "1.2.2"
 gem "mini_magick", "4.7.0"
+gem "font-awesome-rails"
+gem 'popper_js'
 
 
 group :development, :test do
