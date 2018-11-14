@@ -24,7 +24,19 @@
               <li class="main_nav_item"><a href="news.html">News</a></li>
               <li class="main_nav_item"><a href="contact.html">Contact</a></li>
               <% if logged_in? %>
-                <li class="main_nav_item"><%= link_to "Logout", logout_path, method: :delete %></li>
+                <li class="main_nav_item dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <%= current_user.name.upcase %>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Profile", current_user %></li>
+                    <li><%= link_to "Setting", edit_user_path(current_user) %></li>
+                    <li class="divider"></li>
+                    <li>
+                      <%= link_to "Logout", logout_path, method: :delete %>
+                    </li>
+                  </ul>
+                </li>
               <% else %>
                 <li class="main_nav_item">
                   <%= link_to "Login", "#",

@@ -35,7 +35,7 @@ module SessionsHelper
       if user.admin?
        redirect_to admin_root_path
      else
-       redirect_back_or user
+       redirect_to root_path
      end
     end
   end

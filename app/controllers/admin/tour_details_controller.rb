@@ -7,7 +7,9 @@ class Admin::TourDetailsController < Admin::AdminsController
     @tour_detail = TourDetail.new
   end
 
-  def index; end
+  def index
+    @tour_details = TourDetail.all.page params[:page]
+  end
 
   def show; end
 
